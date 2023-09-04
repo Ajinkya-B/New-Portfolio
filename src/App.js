@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AppNavbar from "./components/AppNavbar";
-import About from "./components/About";
+import Home from "./components/Home";
 
 function App() {
   const [rotate, setRotate] = useState(0);
@@ -22,7 +22,7 @@ function App() {
                 alt="BackgroundImage"
               />
             </div>
-            <About />
+            <Home />
             <div className="dummy" style={{ height: "1000px" }}></div>
           </div>
         </div>

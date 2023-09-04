@@ -81,13 +81,13 @@ body {
 .page-content .bg-image img {
   width: 500px;
   height: 500px;
-  transform-origin: 50% 50%;
-  transform: rotate(0deg);
+  transform-origin: 50% 50% !important;
+  transform: rotate(0deg) !important;
   transition: all 1s ease-in-out;
 }
 
-.page-content .bg-image :hover {
-  transform: rotate(180deg);
+.page-content .bg-image img:hover {
+  transform: rotate(180deg) !important;
   transition: all 1s ease-in-out;
 }
 
@@ -175,7 +175,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   margin-top: 1rem;
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   margin: 0;
   color: var(--color-primary);
