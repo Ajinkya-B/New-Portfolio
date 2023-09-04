@@ -1,5 +1,6 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
+import { ImMail2 } from "react-icons/im";
 
 export default function About() {
   return (
@@ -15,6 +16,11 @@ export default function About() {
           repeat={Infinity}
         />
       </div>
+
+      <span style={{ border: "solid 2px", padding: "10px" }}>
+        <ImMail2 />
+        GET IN TOUCH
+      </span>
     </div>
   );
 }

@@ -45,6 +45,7 @@ body {
   min-height: 0; /* without min-height/height:0 flex:1 doesn't work */
   flex: 1;
   padding: 5px;
+  position: relative;
 }
 
 .page-content {
@@ -63,9 +64,31 @@ body {
 /* Add a thumb */
 .page-content::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  border: solid 6px var(--color-secondary);
-  /* border-width: 3px; */
+  border: solid 6px rgba(43, 48, 53, 1);
   background: #000;
+}
+
+.page-content .bg-image {
+  position: absolute;
+  height: 100%;
+  left: -200px;
+  z-index: 1;
+  width: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.page-content .bg-image img {
+  width: 500px;
+  height: 500px;
+  transform-origin: 50% 50%;
+  transform: rotate(0deg);
+  transition: all 1s ease-in-out;
+}
+
+.page-content .bg-image :hover {
+  transform: rotate(180deg);
+  transition: all 1s ease-in-out;
 }
 
 /* App Navbar styles start */
