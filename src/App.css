@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,7 +42,6 @@ body {
 /* Page Content Container CSS */
 
 .page-content-container {
-  background-color: #eff8e2;
   min-height: 0; /* without min-height/height:0 flex:1 doesn't work */
   flex: 1;
   padding: 5px;
@@ -243,4 +243,7 @@ body {
   text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 
+.scroll-down:hover {
+  color: #20656d !important;
+}
 /* About Page styles end */
