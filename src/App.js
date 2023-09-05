@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AppNavbar from "./components/AppNavbar";
 import Home from "./components/Home";
 import SidebarImage from "./components/SidebarImage";
+import About from "./components/About";
 
 function App() {
   return (
@@ -13,14 +14,7 @@ function App() {
           <div className="page-content">
             <SidebarImage />
             <Home />
-            <div
-              id="about"
-              className="dummy"
-              style={{
-                height: "100%",
-                backgroundColor: "#F7F1E1",
-              }}
-            ></div>
+            <About />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { ImMail2 } from "react-icons/im";
 import { TbSquareRoundedChevronDownFilled } from "react-icons/tb";
+import { FaEnvelope, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -49,18 +49,12 @@ export default function Home() {
           />
         </div>
 
-        <span
-          style={{
-            border: "solid 2px",
-            padding: "10px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <ImMail2 style={{ marginRight: "10px" }} />
-          GET IN TOUCH
-        </span>
+        <div style={{ marginTop: "40px" }}>
+          <FaLinkedinIn size={"2em"} style={{ marginRight: "25px" }} />
+          <FaGithub size={"2em"} style={{ marginRight: "25px" }} />
+          <FaEnvelope size={"2em"} />
+        </div>
+
         <a
           href="#about"
           style={{
