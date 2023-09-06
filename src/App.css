@@ -247,3 +247,22 @@ body {
   color: #20656d !important;
 }
 /* About Page styles end */
+
+.section-title {
+  position: relative;
+}
+.section-title::after {
+  width: 64px;
+  top: 3rem;
+}
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 44px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: #3f51b5;
+}

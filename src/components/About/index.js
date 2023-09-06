@@ -28,26 +28,54 @@ export default function About() {
       >
         About
       </span>
-      <div style={{ marginBottom: "auto" }}>
+
+      <div
+        style={{
+          marginBottom: "auto",
+          display: "flex",
+          flexDirection: "row",
+          width: "50%",
+        }}
+      >
         <img
           src={ProfilePic}
           alt="Ajinkya"
-          height={"300px"}
-          style={{ borderRadius: "10px" }}
+          height={"350px"}
+          style={{ borderRadius: "10px", marginRight: "30px" }}
         />
-        <span>Hi my name is AJ</span>
-        <span
-          style={{
-            border: "solid 2px",
-            padding: "10px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <ImMail2 style={{ marginRight: "10px" }} />
-          GET IN TOUCH
-        </span>
+        <div>
+          <h1>Who am I?</h1>
+          <p>
+            Greetings! I'm Ajinkya, a Software Engineer based in Toronto, ON who
+            is experienced and passionate for crafting end-to-end software
+            solutions.
+          </p>
+          <p>
+            Currently, I'm pursuing my Computer Science degree at the University
+            of Toronto, St. George, while actively contributing my skills at WSP
+            Canada.
+          </p>
+          <p>
+            My journey has involved building mobile and web applications,
+            architecting robust backend systems, and orchestrating small-scale
+            DevOps tasks. My commitment to transforming innovative ideas into
+            practical solutions remains unwavering, as I continue to explore new
+            horizons in the ever-evolving tech landscape.
+          </p>
+          <span
+            style={{
+              border: "solid 2px",
+              padding: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "200px",
+            }}
+          >
+            <ImMail2 style={{ marginRight: "10px" }} />
+            GET IN TOUCH
+          </span>
+        </div>
       </div>
     </div>
   );
