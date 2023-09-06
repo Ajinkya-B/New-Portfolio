@@ -13,8 +13,7 @@ export default function AppNavbar() {
       className="bg-body-tertiary app-navbar"
     >
       <Container>
-        {/* <Container> */}
-        <Navbar.Brand href="#home" style={{ width: "100%", height: "100%" }}>
+        <Navbar.Brand href="#home" style={{ width: "80%", height: "100%" }}>
           <div
             style={{
               display: "flex",
@@ -28,7 +27,6 @@ export default function AppNavbar() {
             </div>
           </div>
         </Navbar.Brand>
-        {/* </Container> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
