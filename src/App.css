@@ -305,3 +305,75 @@ body {
   font-weight: 600;
   white-space: nowrap;
 }
+
+.inner {
+  display: flex;
+}
+
+.hSMFmU {
+  width: 100%;
+  height: auto;
+  padding: 10px 5px;
+}
+
+.hSMFmU h3 {
+  margin-bottom: 2px;
+  font-size: var(--fz-xxl);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.hSMFmU .range {
+  margin-bottom: 25px;
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.hSMFmU h3 .company {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+.hSMFmU ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.hSMFmU ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+a.inline-link {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: #3f51b5;
+}
+
+/* a.inline-link:hover {
+  color: black;
+  outline: 0px;
+} */
+
+a.inline-link:hover::after {
+  width: 100%;
+}
+
+a.inline-link::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: relative;
+  bottom: 0.1em;
+  background-color: #3f51b5;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  opacity: 0.5;
+}
