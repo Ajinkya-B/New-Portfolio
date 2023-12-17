@@ -9,6 +9,8 @@ import AppNavbar from "./components/AppNavbar";
 import Home from "./components/Home";
 import SidebarImage from "./components/SidebarImage";
 import About from "./components/About";
+import Demo from "./components/Demo.jsx";
+import Projects from "./components/Projects";
 
 function App() {
   const languages = [
@@ -284,6 +286,17 @@ function App() {
                   </Row>
                 </Tab.Container>
               </div>
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                backgroundColor: "#e2f8f3",
+                marginBottom: "100px",
+              }}
+            >
+              <Projects />
             </div>
           </div>
         </div>
