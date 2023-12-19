@@ -445,3 +445,52 @@ a.inline-link::after {
   color: rgb(246, 172, 162);
   transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.about-button:hover {
+  width: 204px !important;
+  transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: beige;
+  font-size: 16.2px;
+  &-icon {
+    margin-right: 0px !important;
+  }
+}
+
+.title-box-2 {
+  margin-bottom: 3rem;
+}
+
+.title-left {
+  font-size: 2rem;
+  position: relative;
+}
+
+.title-left:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group {
+  margin-bottom: 1rem;
+}

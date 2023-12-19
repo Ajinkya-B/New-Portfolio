@@ -60,7 +60,6 @@ function App() {
         <AppNavbar />
         <div className="page-content-container">
           <div className="page-content" onScroll={onScroll} id="test">
-            {console.log(scroll)}
             <SidebarImage />
             <Home scrollHeight={scroll} />
             <About />
@@ -185,28 +184,31 @@ function App() {
                                   rel="noopener noreferrer"
                                   target="_blank"
                                 >
-                                  WSP Canada
+                                  WSP in Canada
                                 </a>
                               </span>
                             </h3>
-                            <p className="range">Mar 2020 - Present</p>
+                            <p className="range">May 2023 - August 2023</p>
                             <div>
                               <ul>
                                 <li>
-                                  Developing Web applications with Spring
-                                  Framework
+                                  Developed a full-stack web app housing
+                                  multiple web tools, catering to the needs of
+                                  over 200 employees
                                 </li>
                                 <li>
-                                  Maintain the performance of applications
-                                  developed using spring boot and angular
+                                  Leveraged the Adobe Platform Services API to
+                                  deliver data management and 3D Viewer web
+                                  tools, improving workflow efficiency for over
+                                  100 engineers
                                 </li>
                                 <li>
-                                  Refactoring the code of a scalable web
-                                  application from Angularjs to Angular
+                                  Integrated GitHub workflows into development
+                                  lifecycle to to Azure App Service
                                 </li>
                                 <li>
-                                  Collaborate with the UX/UI team to design and
-                                  develop a REST API
+                                  Enhanced the robustness of a C++ tool serving
+                                  as an Autodesk Revit extension
                                 </li>
                               </ul>
                             </div>
@@ -228,24 +230,24 @@ function App() {
                                 </a>
                               </span>
                             </h3>
-                            <p className="range">Mar 2020 - Present</p>
+                            <p className="range">September 2022 - Present</p>
                             <div>
                               <ul>
                                 <li>
-                                  Developing Web applications with Spring
-                                  Framework
+                                  Maintained the front-end to deliver a
+                                  comfortable and easy-to-use UI/UX
                                 </li>
                                 <li>
-                                  Maintain the performance of applications
-                                  developed using spring boot and angular
+                                  Migrated to Firebase and developed REST API,
+                                  reducing locally stored data by 80%
                                 </li>
                                 <li>
-                                  Refactoring the code of a scalable web
-                                  application from Angularjs to Angular
+                                  Supported software development by following a
+                                  Agile methodology
                                 </li>
                                 <li>
-                                  Collaborate with the UX/UI team to design and
-                                  develop a REST API
+                                  Automated Plesk deployment with GitHub Actions
+                                  and added source code testing workflows
                                 </li>
                               </ul>
                             </div>
@@ -267,24 +269,27 @@ function App() {
                                 </a>
                               </span>
                             </h3>
-                            <p className="range">Mar 2020 - Present</p>
+                            <p className="range">
+                              September 2019 - December 2019
+                            </p>
                             <div>
                               <ul>
                                 <li>
-                                  Developing Web applications with Spring
-                                  Framework
+                                  Developed a mobile application, which provides
+                                  quick access to sales breakdowns for over 50
+                                  client-owned businesses
                                 </li>
                                 <li>
-                                  Maintain the performance of applications
-                                  developed using spring boot and angular
+                                  Implemented a login authentication system
+                                  using AUTH token API
                                 </li>
                                 <li>
-                                  Refactoring the code of a scalable web
-                                  application from Angularjs to Angular
+                                  Used GET and PUT APIs to manage sales data for
+                                  a business
                                 </li>
                                 <li>
-                                  Collaborate with the UX/UI team to design and
-                                  develop a REST API
+                                  Reported over 20 critical bugs by creating
+                                  detailed reproduction steps
                                 </li>
                               </ul>
                             </div>

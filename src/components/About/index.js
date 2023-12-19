@@ -77,19 +77,25 @@ export default function About() {
                 I continue to explore new horizons in the ever-evolving tech
                 landscape.
               </p>
-              <span
-                style={{
-                  border: "solid 2px",
-                  padding: "10px",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  width: "200px",
-                }}
-              >
-                <ImMail2 style={{ marginRight: "10px" }} />
-                GET IN TOUCH
-              </span>
+              <a href="#appFooter" className="no-link">
+                <span
+                  style={{
+                    border: "solid 2px",
+                    padding: "10px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "200px",
+                  }}
+                  className="about-button"
+                >
+                  <ImMail2
+                    style={{ marginRight: "10px" }}
+                    className="about-button-icon"
+                  />
+                  GET IN TOUCH
+                </span>
+              </a>
             </div>
           </Col>
         </Row>
