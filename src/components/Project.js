@@ -8,28 +8,17 @@ export default function Project({ title, content, skillsList }) {
         display: "flex",
         flexDirection: "flex-row",
         flex: "1",
-        height: "150px",
-        padding: "10px 0px",
-        border: "solid 2px",
-        borderColor: "purple",
         margin: "10px",
+        padding: "24px 32px",
         color: "black",
+        backgroundColor: "#fafafa",
       }}
       className="test124"
     >
       <div
         style={{
           height: "100%",
-          width: "20%",
-          backgroundColor: "lightblue",
-        }}
-      >
-        Image
-      </div>
-      <div
-        style={{
-          height: "100%",
-          width: "70%",
+          width: "100%",
           display: "flex",
           flexDirection: "column",
         }}
@@ -66,25 +55,24 @@ export default function Project({ title, content, skillsList }) {
               flexDirection: "row",
             }}
           >
-            {["React Native", "TypeScript", "Node.js", "Arduino", "C++"].map(
-              (item) => {
-                return (
-                  <div
-                    style={{
-                      margin: "0 5px",
-                      padding: "2px 5px",
-                      backgroundColor: "#283593",
-                      color: "white",
-                      borderRadius: "5px",
-                      fontSize: "13px",
-                      fontWeight: "600",
-                    }}
-                  >
-                    {item.toUpperCase()}
-                  </div>
-                );
-              }
-            )}
+            {skillsList?.map((item, index) => {
+              return (
+                <div
+                  style={{
+                    margin: "0 5px",
+                    padding: "2px 5px",
+                    backgroundColor: "#283593",
+                    color: "white",
+                    borderRadius: "5px",
+                    fontSize: "13px",
+                    fontWeight: "600",
+                  }}
+                  key={index}
+                >
+                  {item.toUpperCase()}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

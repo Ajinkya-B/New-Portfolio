@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { TbSquareRoundedChevronDownFilled } from "react-icons/tb";
 import { FaEnvelope, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-export default function Home() {
+export default function Home({ scrollHeight }) {
   return (
     <div
       className="content-2"
@@ -27,20 +26,31 @@ export default function Home() {
             justifyContent: "center",
             alignItems: "center",
             marginTop: "auto",
+            marginBottom: "32px",
           }}
         >
-          <h2 class="text_shadows">HEY! </h2>
-          <div style={{ fontSize: "2.5em" }}>My name is Ajinkya.</div>
+          {/* <h2 class="text_shadows">HEY! </h2> */}
+          <div
+            style={{
+              fontSize: "calc((22 / 16) * 1rem)",
+              letterSpacing: "2px",
+            }}
+          >
+            AJINKYA BHOSALE
+          </div>
+          <span
+            style={{ width: "400px", height: "1px", backgroundColor: "#000" }}
+          ></span>
         </div>
 
         <div style={{ marginBottom: "10px" }}>
-          <span style={{ fontSize: "1.5em" }}>I'm a</span>
+          <span style={{ fontSize: "4em" }}>I'm a </span>
           <TypeAnimation
             sequence={[" developer", 1000, " leader", 1000, " innovator", 1000]}
             speed={50}
             style={{
               whiteSpace: "pre-line",
-              fontSize: "1.5em",
+              fontSize: "4em",
               backgroundColor: "#f6aca2",
               fontWeight: "600",
               borderRadius: "10px",
@@ -55,24 +65,33 @@ export default function Home() {
           <FaEnvelope size={"2em"} />
         </div>
 
-        <a
-          href="#about"
+        <div
           style={{
-            textDecoration: "none",
+            display: "flex",
+            justifyContent: "center",
             marginTop: "auto",
-            marginBottom: "20px",
+            marginBottom: "50px",
           }}
         >
-          <TbSquareRoundedChevronDownFilled
-            style={{
-              width: "3em",
-              height: "3em",
-              color: "black",
-              transition: "all 0.3s ease-in-out",
-            }}
-            className="scroll-down"
-          />
-        </a>
+          <a
+            href="#about"
+            data-status="entered"
+            data-hidden={scrollHeight > 20 ? true : false}
+            className="mouseAnime"
+          >
+            <span
+              className="testanime"
+              style={{
+                width: "2px",
+                height: "8px",
+                background: "rgb(246, 172, 162)",
+                borderRadius: "4px",
+                marginTop: "6px",
+                marginLeft: "1px",
+              }}
+            ></span>
+          </a>
+        </div>
       </div>
     </div>
   );

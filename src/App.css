@@ -243,10 +243,6 @@ body {
   font: 700 normal 2.5em "tahoma";
   text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
-
-.scroll-down:hover {
-  color: #20656d !important;
-}
 /* About Page styles end */
 
 .section-title {
@@ -381,4 +377,61 @@ a.inline-link::after {
 .test124:hover {
   /* background-color: rgba(52, 52, 52, 0.8); */
   transition: ease-in 0.15s;
+}
+
+.testanime {
+  animation: Intro_introScrollIndicator__8hg2_ 2s ease infinite;
+
+  border-radius: 100px;
+}
+
+@keyframes Intro_introScrollIndicator__8hg2_ {
+  0% {
+    transform: translate3d(-1px, 0, 0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translate3d(-1px, 0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(-1px, 8px, 0);
+    opacity: 0;
+  }
+}
+
+.mouseAnime {
+  transition-property: opacity, transform;
+}
+
+.mouseAnime {
+  border: 2px solid rgb(246, 172, 162);
+  border-radius: 20px;
+  width: 26px;
+  height: 38px;
+  transition-property: opacity;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mouseAnime[data-status="entered"] {
+  opacity: 1;
+}
+
+.mouseAnime[data-hidden="true"] {
+  opacity: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mouseAnime[data-hidden="true"] {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  .mouseAnime {
+    transition-property: opacity, transform;
+  }
 }

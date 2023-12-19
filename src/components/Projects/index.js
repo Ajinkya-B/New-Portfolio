@@ -14,36 +14,52 @@ export default function Projects() {
       }}
     >
       <span style={{ float: "right", padding: "10px", height: "100%" }}>
-        <img src={ProfilePic} alt="Really good picture" width={90} />
+        <img src={ProfilePic} alt="MyImage" width={90} />
       </span>
       <div
         className="container"
         style={{
-          backgroundColor: "whitesmoke",
           padding: "5%",
-          borderRadius: "10px",
-          backgroundColor: "#f8e2e7",
         }}
       >
         <h3
           className=" tg__title-5--s tg__title-4--m tg__title-4--l tg__t--center--s leadership__title "
-          style={{ color: "#3f51b5", fontWeight: "600" }}
+          style={{ fontWeight: "600", marginBottom: "40px" }}
         >
-          Project Work
+          Here are my favorite projects
         </h3>
         <Project
           title={"Secure Spaces"}
           content={
-            "A system that aims to provide a secure solution for users to protect their belongings in shared study spaces"
+            "A system that aims to provide a secure solution for university students to protect their belongings in shared study spaces"
           }
+          skillsList={[
+            "React Native",
+            "TypeScript",
+            "Node.js",
+            "Arduino",
+            "C++",
+          ]}
         />
         <Project
-          title={"Ghost Board; ChatBot Analytics Dashboard"}
-          content={"content"}
+          title={"Ghost Board; Analytics Dashboard of ChatBots"}
+          content={`An analytics dashboard that delivers clarity for businesses on Voiceflow, shedding light on why users leave chatbot conversations`}
+          skillsList={[
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "REST API",
+            "Netlify",
+            "Google Cloud",
+          ]}
         />
         <Project
-          title={"2048 bot; Using Reinforcement Learning"}
-          content={"content"}
+          title={"2048 bot; Applying Reinforcement Learning"}
+          content={
+            "Worked alongside 2 students to develop a RL bot for the game 2048 using algorithms like Monte Carlo Search Trees, SARSA, and Deep-Q Learning"
+          }
+          skillsList={["Python", "Numpy", "Pandas", "Sklearn", "matplotlib"]}
         />
       </div>
     </div>

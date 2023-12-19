@@ -9,8 +9,9 @@ import AppNavbar from "./components/AppNavbar";
 import Home from "./components/Home";
 import SidebarImage from "./components/SidebarImage";
 import About from "./components/About";
-import Demo from "./components/Demo.jsx";
 import Projects from "./components/Projects";
+import AppFooter from "./components/AppFooter";
+import { useState } from "react";
 
 function App() {
   const languages = [
@@ -46,14 +47,22 @@ function App() {
     "Figma",
     "Postman",
   ];
+  const [scroll, setScroll] = useState(0);
+  const onScroll = () => {
+    const scrollTop = document.getElementById("test").scrollTop;
+
+    setScroll(scrollTop);
+  };
+
   return (
     <div className="app-container">
       <div className="app">
         <AppNavbar />
         <div className="page-content-container">
-          <div className="page-content">
+          <div className="page-content" onScroll={onScroll} id="test">
+            {console.log(scroll)}
             <SidebarImage />
-            <Home />
+            <Home scrollHeight={scroll} />
             <About />
             <div
               style={{
@@ -293,11 +302,11 @@ function App() {
                 display: "flex",
                 justifyContent: "center",
                 backgroundColor: "#e2f8f3",
-                marginBottom: "100px",
               }}
             >
               <Projects />
             </div>
+            <AppFooter />
           </div>
         </div>
       </div>
