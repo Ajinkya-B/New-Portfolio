@@ -47,7 +47,7 @@ export default function Home({ scrollHeight }) {
           <span style={{ fontSize: "4em" }}>I'm a </span>
           <TypeAnimation
             sequence={[" developer", 1000, " leader", 1000, " innovator", 1000]}
-            speed={50}
+            speed={10}
             style={{
               whiteSpace: "pre-line",
               fontSize: "4em",
@@ -60,9 +60,27 @@ export default function Home({ scrollHeight }) {
         </div>
 
         <div style={{ marginTop: "40px" }}>
-          <FaLinkedinIn size={"2em"} style={{ marginRight: "25px" }} />
-          <FaGithub size={"2em"} style={{ marginRight: "25px" }} />
-          <FaEnvelope size={"2em"} />
+          <a
+            href="https://www.linkedin.com/in/ajinkyabhosale-/"
+            target="blank"
+            className="no-link icon-hover"
+          >
+            <FaLinkedinIn size={"2em"} style={{ marginRight: "25px" }} />
+          </a>
+          <a
+            href="https://github.com/Ajinkya-B"
+            target="blank"
+            className="no-link icon-hover"
+          >
+            <FaGithub size={"2em"} style={{ marginRight: "25px" }} />
+          </a>
+          <a
+            href="mailto:ajinkya.bhosale85@gmail.com"
+            target="blank"
+            className="no-link icon-hover"
+          >
+            <FaEnvelope size={"2em"} />
+          </a>
         </div>
 
         <div

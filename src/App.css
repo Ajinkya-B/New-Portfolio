@@ -435,3 +435,13 @@ a.inline-link::after {
     transition-property: opacity, transform;
   }
 }
+
+.no-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-hover:hover {
+  color: rgb(246, 172, 162);
+  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}

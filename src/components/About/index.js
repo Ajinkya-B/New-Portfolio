@@ -54,18 +54,24 @@ export default function About() {
             <div>
               <h1>Who am I?</h1>
               <p>
-                Greetings! I'm Ajinkya, a Software Engineer based in Toronto, ON
+                Greetings! I'm Ajinkya, a Software Engineer based in{" "}
+                <b style={{ color: "#062576" }}>Toronto, ON </b>
                 who is experienced and passionate for crafting end-to-end
                 software solutions.
               </p>
               <p>
-                Currently, I'm pursuing my Computer Science degree at the
-                University of Toronto, St. George, while actively contributing
-                my skills at WSP Canada.
+                Currently, I'm pursuing my Computer Science degree at the{" "}
+                <b style={{ color: "#062576" }}>
+                  University of Toronto, St. George
+                </b>
+                , while actively contributing my skills at WSP Canada.
               </p>
               <p>
-                My journey has involved building mobile and web applications,
-                architecting robust backend systems, and orchestrating
+                My journey has involved{" "}
+                <b style={{ color: "#062576" }}>
+                  building mobile and web applications
+                </b>
+                , architecting robust backend systems, and orchestrating
                 small-scale DevOps tasks. My commitment to transforming
                 innovative ideas into practical solutions remains unwavering, as
                 I continue to explore new horizons in the ever-evolving tech
