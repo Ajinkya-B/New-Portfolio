@@ -15,7 +15,7 @@ import { useState } from "react";
 
 function App() {
   const languages = [
-    "JavaScript",
+    "JavaScript", 
     "HTML5",
     "CSS3",
     "Typescript",
