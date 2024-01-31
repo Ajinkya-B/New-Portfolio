@@ -13,7 +13,7 @@ export default function AppNavbar() {
       className="bg-body-tertiary app-navbar"
     >
       <Container>
-        <Navbar.Brand href="#home" style={{ width: "80%", height: "100%" }}>
+        <Navbar.Brand href="#home" style={{ height: "100%" }}>
           <div
             style={{
               display: "flex",

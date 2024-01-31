@@ -36,17 +36,28 @@ export default function About() {
       <Container
         style={{
           marginBottom: "auto",
-          width: "50%",
+          width: "60%",
         }}
+        className="about-container"
       >
         <Row>
-          <Col lg={5}>
+          <Col
+            lg={5}
+            style={{
+              justifyContent: "center",
+              alignItems: "center",
+              display: "flex",
+            }}
+          >
             <img
               src={ProfilePic}
+              className="profile-pic"
               alt="Ajinkya"
               // height={"350px"}
-              width={"100%"}
-              style={{ borderRadius: "10px", marginRight: "30px" }}
+              style={{
+                borderRadius: "10px",
+                width: "80%",
+              }}
             />
           </Col>
 

@@ -79,6 +79,35 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 576px) {
+  .typeAnimation {
+    font-size: 2em !important;
+  }
+  .profile-pic {
+    width: 50% !important;
+  }
+  .about-container {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .bg-image {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .bg-image img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .bg-image {
+    width: 300px !important;
+    left: -150px !important;
+  }
+}
+
 .bg-image img {
   width: 500px;
   height: 500px;

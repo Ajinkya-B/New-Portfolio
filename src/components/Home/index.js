@@ -27,6 +27,8 @@ export default function Home({ scrollHeight }) {
             alignItems: "center",
             marginTop: "auto",
             marginBottom: "32px",
+            width: "100%",
+            padding: "0 20%",
           }}
         >
           {/* <h2 class="text_shadows">HEY! </h2> */}
@@ -34,23 +36,26 @@ export default function Home({ scrollHeight }) {
             style={{
               fontSize: "calc((22 / 16) * 1rem)",
               letterSpacing: "2px",
+              flex: "1",
             }}
           >
             AJINKYA BHOSALE
           </div>
           <span
-            style={{ width: "400px", height: "1px", backgroundColor: "#000" }}
+            style={{ flex: 2, height: "1px", backgroundColor: "#000" }}
           ></span>
         </div>
 
-        <div style={{ marginBottom: "10px" }}>
-          <span style={{ fontSize: "4em" }}>I'm a </span>
+        <div
+          style={{ marginBottom: "10px", fontSize: "4em" }}
+          className="typeAnimation"
+        >
+          <span style={{}}>I'm a </span>
           <TypeAnimation
             sequence={[" developer", 1000, " leader", 1000, " innovator", 1000]}
             speed={10}
             style={{
               whiteSpace: "pre-line",
-              fontSize: "4em",
               backgroundColor: "#f6aca2",
               fontWeight: "600",
               borderRadius: "10px",
