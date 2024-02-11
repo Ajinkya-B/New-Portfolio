@@ -19,6 +19,7 @@ export default function Home({ scrollHeight }) {
           height: "100%",
           flex: "1",
         }}
+        className="animate__animated animate__zoomInDown"
       >
         <div
           style={{
