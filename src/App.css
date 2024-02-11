@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   -webkit-flex-flow: column; /* doesn't work without prefix */
   flex-flow: column;
+  overflow-x: hidden;
 }
 
 /* Page Content Container CSS */
@@ -89,11 +90,21 @@ body {
   .about-container {
     width: 80% !important;
   }
+  .leadership {
+    padding: 100px 10% !important;
+  }
+  .skills-sec {
+    width: 80% !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .bg-image {
-    display: none;
+    animation-name: fadeOutWithBounce !important;
+  }
+  .bg-image img {
+    width: 300px !important;
+    height: 300px !important;
   }
 }
 
@@ -458,7 +469,7 @@ a.inline-link::after {
 }
 @media (prefers-reduced-motion: no-preference) {
   .mouseAnime[data-hidden="true"] {
-    transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 60px, 0);
   }
 
   .mouseAnime {
@@ -575,7 +586,7 @@ a.inline-link::after {
   }
   50% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(40px);
   }
   75% {
     transform: translateX(-20px);
@@ -589,17 +600,22 @@ a.inline-link::after {
   animation: fadeInWithBounce 1000ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes fadeIn {
+@keyframes fadeOutWithBounce {
   0% {
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
+    transform: translateX(0px);
   }
-
+  50% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(80px);
+    opacity: 1;
+  }
   100% {
-    transform: translateY(0);
+    opacity: 0;
+    transform: translateX(-100px);
+    display: none;
   }
-}
-
-.fade-in {
-  animation: fadeIn 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

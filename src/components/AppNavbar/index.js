@@ -10,7 +10,7 @@ export default function AppNavbar() {
       expand="md"
       bg="dark"
       data-bs-theme="dark"
-      className="bg-body-tertiary app-navbar"
+      className="bg-body-tertiary app-navbar animate__animated animate__rubberBand"
     >
       <Container>
         <Navbar.Brand href="#home" style={{ height: "100%" }}>

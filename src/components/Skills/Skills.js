@@ -45,6 +45,7 @@ export default function Skills() {
         height: "100%",
         padding: "20px",
       }}
+      className="skills-sec"
     >
       <p
         className="section-title"

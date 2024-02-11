@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "../Project.js";
 import ProfilePic from "../../assets/images/test-project.webp";
+import Container from "react-bootstrap/esm/Container.js";
 
 // TODO: Add off canvas for each projects to show additional info using react bootstrap offcanvas
 
@@ -20,7 +21,7 @@ export default function Projects() {
           width: "100%",
         }}
       >
-        <span style={{ float: "right", padding: "10px", height: "100%" }}>
+        <span style={{ float: "right", padding: "10px" }}>
           <img src={ProfilePic} alt="MyImage" width={90} />
         </span>
         <div
@@ -35,39 +36,47 @@ export default function Projects() {
           >
             Here are my favorite projects
           </h3>
-          <Project
-            title={"Secure Spaces"}
-            content={
-              "A system that aims to provide a secure solution for university students to protect their belongings in shared study spaces"
-            }
-            skillsList={[
-              "React Native",
-              "TypeScript",
-              "Node.js",
-              "Arduino",
-              "C++",
-            ]}
-          />
-          <Project
-            title={"Ghost Board; Analytics Dashboard of ChatBots"}
-            content={`An analytics dashboard that delivers clarity for businesses on Voiceflow, shedding light on why users leave chatbot conversations`}
-            skillsList={[
-              "React.js",
-              "Node.js",
-              "Express.js",
-              "MongoDB",
-              "REST API",
-              "Netlify",
-              "Google Cloud",
-            ]}
-          />
-          <Project
-            title={"2048 bot; Applying Reinforcement Learning"}
-            content={
-              "Worked alongside 2 students to develop a RL bot for the game 2048 using algorithms like Monte Carlo Search Trees, SARSA, and Deep-Q Learning"
-            }
-            skillsList={["Python", "Numpy", "Pandas", "Sklearn", "matplotlib"]}
-          />
+          <Container>
+            <Project
+              title={"Secure Spaces"}
+              content={
+                "A system that aims to provide a secure solution for university students to protect their belongings in shared study spaces"
+              }
+              skillsList={[
+                "React Native",
+                "TypeScript",
+                "Node.js",
+                "Arduino",
+                "C++",
+              ]}
+            />
+            <Project
+              title={"Ghost Board; Analytics Dashboard of ChatBots"}
+              content={`An analytics dashboard that delivers clarity for businesses on Voiceflow, shedding light on why users leave chatbot conversations`}
+              skillsList={[
+                "React.js",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "REST API",
+                "Netlify",
+                "Google Cloud",
+              ]}
+            />
+            <Project
+              title={"2048 bot; Applying Reinforcement Learning"}
+              content={
+                "Worked alongside 2 students to develop a RL bot for the game 2048 using algorithms like Monte Carlo Search Trees, SARSA, and Deep-Q Learning"
+              }
+              skillsList={[
+                "Python",
+                "Numpy",
+                "Pandas",
+                "Sklearn",
+                "matplotlib",
+              ]}
+            />
+          </Container>
         </div>
       </div>
     </div>

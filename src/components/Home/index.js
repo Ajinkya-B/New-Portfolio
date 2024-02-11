@@ -94,7 +94,7 @@ export default function Home({ scrollHeight }) {
             display: "flex",
             justifyContent: "center",
             marginTop: "auto",
-            marginBottom: "50px",
+            marginBottom: "80px",
           }}
         >
           <a

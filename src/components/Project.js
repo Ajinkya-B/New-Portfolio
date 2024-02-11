@@ -1,4 +1,5 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
 export default function Project({ title, content, skillsList }) {
   return (
@@ -7,7 +8,7 @@ export default function Project({ title, content, skillsList }) {
         borderRadius: "6px",
         display: "flex",
         flexDirection: "flex-row",
-        flex: "1",
+        width: "100%",
         margin: "10px",
         padding: "24px 32px",
         color: "black",
@@ -49,31 +50,29 @@ export default function Project({ title, content, skillsList }) {
             {content}
           </p>
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-            }}
-          >
+          <Container>
             {skillsList?.map((item, index) => {
               return (
-                <div
+                <span
+                  className="me-3"
                   style={{
-                    margin: "0 5px",
+                    display: "inline-block",
+                    whiteSpace: "pre-line",
                     padding: "2px 5px",
                     backgroundColor: "#283593",
                     color: "white",
                     borderRadius: "5px",
                     fontSize: "13px",
                     fontWeight: "600",
+                    marginBottom: "0.5rem",
                   }}
                   key={index}
                 >
                   {item.toUpperCase()}
-                </div>
+                </span>
               );
             })}
-          </div>
+          </Container>
         </div>
       </div>
     </div>
