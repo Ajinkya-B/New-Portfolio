@@ -10,15 +10,13 @@ import AppFooter from "./components/AppFooter";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import Loading from "./components/Loading/Loading.js";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function App() {
   const [scroll, setScroll] = useState(0);
-  const onScroll = () => {
-    const scrollTop = document.getElementById("test").scrollTop;
+  const [relativeScroll, setRelativeScroll] = useState(0);
+  const ref = useRef(null);
 
-    setScroll(scrollTop);
-  };
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
@@ -26,15 +24,32 @@ function App() {
     }, 3000);
   }, []);
 
+  useEffect(() => {
+    if (loading === false) {
+      console.log(ref.current.scrollHeight, ref.current.scrollTop);
+      setRelativeScroll((scroll / (ref.current.scrollHeight - 732)) * 100);
+    }
+  }, [loading, scroll, ref]);
+
+  const onScroll = () => {
+    const scrollTop = document.getElementById("test").scrollTop;
+    setScroll(scrollTop);
+  };
+
   return (
     <div className="app-container">
       {loading ? (
         <Loading />
       ) : (
         <div className="app">
-          <AppNavbar />
+          <AppNavbar scrollHeight={relativeScroll} />
           <div className="page-content-container">
-            <div className="page-content" onScroll={onScroll} id="test">
+            <div
+              className="page-content"
+              onScroll={onScroll}
+              id="test"
+              ref={ref}
+            >
               <SidebarImage />
               <Home scrollHeight={scroll} />
               <About />
