@@ -64,6 +64,8 @@ export default function AppNavbar({ scrollHeight }) {
             height: "100%",
             width: `${scrollHeight}%`,
             backgroundColor: "orange",
+            borderTopRightRadius: "2px",
+            borderBottomRightRadius: "2px",
           }}
         ></div>
       </div>

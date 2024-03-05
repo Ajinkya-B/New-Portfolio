@@ -26,8 +26,9 @@ function App() {
 
   useEffect(() => {
     if (loading === false) {
-      console.log(ref.current.scrollHeight, ref.current.scrollTop);
-      setRelativeScroll((scroll / (ref.current.scrollHeight - 732)) * 100);
+      setRelativeScroll(
+        (scroll / (ref.current.scrollHeight - ref.current.clientHeight)) * 100
+      );
     }
   }, [loading, scroll, ref]);
 
