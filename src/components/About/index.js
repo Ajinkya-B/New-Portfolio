@@ -90,23 +90,13 @@ export default function About() {
                 landscape.
               </p>
               <a href="#appFooter" className="no-link">
-                <span
-                  style={{
-                    border: "solid 2px",
-                    padding: "10px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: "200px",
-                  }}
-                  className="about-button"
-                >
+                <div class="button-19" role="button">
+                  GET IN TOUCH
                   <ImMail2
                     style={{ marginRight: "10px" }}
                     className="about-button-icon"
                   />
-                  GET IN TOUCH
-                </span>
+                </div>
               </a>
             </div>
           </Col>
