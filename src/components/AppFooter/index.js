@@ -155,13 +155,14 @@ export default function AppFooter() {
               >
                 <FaEnvelope size={"2em"} />
               </a>
-              <a
-                href="https://www.flaticon.com/free-stickers/question"
-                title="question stickers"
-              >
-                Question stickers created by bukeicon - Flaticon
-              </a>
             </div>
+            <a
+              href="https://www.flaticon.com/free-stickers/question"
+              title="question stickers"
+              style={{ fontSize: "0.8rem" }}
+            >
+              Stickers created by bukeicon - Flaticon
+            </a>
           </div>
         </div>
       </div>

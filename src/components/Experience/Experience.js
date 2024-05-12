@@ -3,10 +3,25 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
+import ProfilePic from "../../assets/images/question.png";
 
 export default function Experience() {
   return (
-    <div id="experience" style={{ width: "60%", marginTop: "100px" }}>
+    <div
+      id="experience"
+      style={{ width: "60%", marginTop: "100px", position: "relative" }}
+    >
+      <img
+        src={ProfilePic}
+        className="hi"
+        alt="Ajinkya"
+        style={{
+          height: "10em",
+          position: "absolute",
+          right: "-3rem",
+          top: "0",
+        }}
+      />
       <span className="demo-1">Where I've worked</span>
       <Tab.Container id="left-tabs-example" defaultActiveKey="first">
         <Row>
