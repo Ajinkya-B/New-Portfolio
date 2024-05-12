@@ -101,6 +101,12 @@ body {
   .skills-sec {
     width: 80% !important;
   }
+  #appFooter {
+    padding-bottom: 10rem !important;
+  }
+  .ai-profile-pic {
+    height: 10rem !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -113,13 +119,12 @@ body {
   }
   .toon-profile-pic {
     animation-name: fadeOutWithBounceVertical !important;
-    /* display: none; */
   }
 }
 
 @media only screen and (max-width: 1500px) {
   .toon-profile-pic {
-    height: 20rem !important;
+    height: 16rem !important;
   }
 }
 

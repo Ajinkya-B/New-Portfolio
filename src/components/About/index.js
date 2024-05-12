@@ -75,7 +75,8 @@ export default function About() {
                 <b style={{ color: "#062576" }}>
                   University of Toronto, St. George
                 </b>
-                , while actively contributing my skills at WSP Canada.
+                , while actively contributing my skills at Zeno Labz as a{" "}
+                <b style={{ color: "#062576" }}>Software Developer.</b>
               </p>
               <p>
                 My journey has involved{" "}

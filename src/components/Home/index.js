@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaEnvelope, FaLinkedinIn, FaGithub } from "react-icons/fa";
-import ProfilePic from "../../assets/images/toon-profile-pic.png";
+import ProfilePic from "../../assets/images/hi.png";
 
 export default function Home({ scrollHeight }) {
   return (
@@ -19,7 +19,7 @@ export default function Home({ scrollHeight }) {
           className="toon-profile-pic"
           alt="Ajinkya"
           style={{
-            height: "26em",
+            height: "18em",
             position: "absolute",
             right: "5rem",
             bottom: "0",

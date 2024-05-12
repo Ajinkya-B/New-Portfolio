@@ -1,6 +1,7 @@
 import React from "react";
 import { ImMail2 } from "react-icons/im";
 import { FaEnvelope, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import ProfilePic from "../../assets/images/ai-profile-pic.png";
 
 export default function AppFooter() {
   return (
@@ -11,9 +12,21 @@ export default function AppFooter() {
         display: "flex",
         justifyContent: "center",
         padding: "40px 22%",
+        position: "relative",
       }}
       id="appFooter"
     >
+      <img
+        src={ProfilePic}
+        className="ai-profile-pic"
+        alt="Ajinkya"
+        style={{
+          height: "12em",
+          position: "absolute",
+          right: "0",
+          bottom: "0",
+        }}
+      />
       <div id="contact" className="box-shadow-full">
         <div className="row">
           <div className="col-md-6">
@@ -141,6 +154,12 @@ export default function AppFooter() {
                 className="no-link icon-hover"
               >
                 <FaEnvelope size={"2em"} />
+              </a>
+              <a
+                href="https://www.flaticon.com/free-stickers/question"
+                title="question stickers"
+              >
+                Question stickers created by bukeicon - Flaticon
               </a>
             </div>
           </div>
